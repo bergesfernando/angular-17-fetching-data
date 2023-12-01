@@ -1,0 +1,13 @@
+<div *ngIf="data">
+    <h2>Data Display</h2>
+    <div *ngFor="let item of data.items">
+        <div>
+            <strong>Insight Number:</strong> {{ item.insight_nbr }}<br>
+            <strong>Insight Description:</strong> {{ item.insight_desc }}<br>
+            <strong>Trends Link:</strong> <a href="{{ item.trends_link }}" target="_blank">{{ item.trends_link
+                }}</a><br>
+            <!-- Add other properties you want to display -->
+        </div>
+        <hr>
+    </div>
+</div>
